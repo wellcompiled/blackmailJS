@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>blackmail.js - Demo</title>
+  <link rel="stylesheet" href="blackmail.min.css">
+  <script src="src/blackmail.js" charset="utf-8"></script>
+
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-size: 1.4em;
+      color: rgba(241, 241, 241, 0.52);
+    }
+
+    ::-moz-selection {
+      /* Code for Firefox */
+      color: #1b1919f2;
+      background: rgba(241, 241, 241, 0.52);
+    }
+
+    ::selection {
+      color: #1b1919f2;
+      background: rgba(241, 241, 241, 0.52);
+    }
+
+    code {
+      font-size: 0.8em
+    }
+
+    div.wrapper {
+      width: 100%;
+      max-width: 570px;
+      position: relative;
+      margin: 0 auto;
+    }
+
+    a, a:visited, a:focus {
+      color: rgba(241, 241, 241, 0.52);
+      animation: flash 4s ease-in-out infinite;
+      -webkit-animation: flash 4s ease-in-out infinite;
+      text-decoration: none;
+    }
+    @keyframes flash {
+      from {
+        color: rgba(241, 241, 241, 0.52);
+        /* text-shadow: rgba(241, 241, 241, 0.52) 0 0 0em; */
+      }
+      50% {
+        color: rgba(41, 241, 221, 0.52);
+        text-shadow: rgba(241, 241, 221, 0.8) 0 0 1em;
+      }
+      to {
+        color: rgba(241, 241, 241, 0.52);
+        /* text-shadow: rgba(241, 241, 241, 0.52) 0 0 0em; */
+      }
+      
+      
+    }
+    a:hover {
+      color: rgba(41, 241, 21, 0.62);
+      text-shadow: rgba(241, 241, 221, 0.8) 0 0 1em;
+    }
+
+    div#BLK_Example {
+      font-size: 1.9em;
+      position: absolute;
+    }
+
+    div#BLK_Default {
+      position: absolute;
+      font-size: 2em;
+      width: 100%;
+      top: 520px;
+    }
+
+    div#BLK_Default::after {
+      text-align: right;
+      float: right;
+      width: 100%;
+      content: "Default";
+      font-size: .5em;
+      right: 0;
+      color: white;
+    }
+
+    div#BLK_Mono {
+      position: absolute;
+      font-size: 2em;
+      width: 100%;
+      top: 700px;
+
+    }
+
+    div#BLK_Mono::after {
+      text-align: right;
+      float: right;
+      width: 100%;
+      content: "Monotype";
+      font-size: .5em;
+      right: 0;
+      color: white;
+    }
+
+    div#BLK_Shadows {
+      position: absolute;
+      font-size: 2em;
+      width: 100%;
+      top: 900px;
+
+    }
+
+    div#BLK_Shadows::after {
+      text-align: right;
+      float: right;
+      width: 100%;
+      content: "Shadow Style";
+      font-size: .5em;
+      right: 0;
+      color: white;
+    }
+
+    div.description {
+      position: absolute;
+      top: 10px;
+      padding: 0 10px;
+      line-height: 1.4;
+    }
+
+    div#BLK_Title {
+      position: absolute;
+      font-size: 1.25em;
+      letter-spacing: 0;
+
+    }
+
+    footer {
+      position: absolute;
+      margin: 1em 0;
+      font-size: 0.85em;
+    }
+
+    p {
+
+      margin-block-start: 3em;
+    }
+
+    span.copyleft {
+      position: absolute;
+      transform: scale(-1);
+      -webkit-transform: scale(-1);
+    }
+    
+  </style>
+</head>
+
+<body style="background-color: #1b1919f2">
+
+  <div class="wrapper">
+
+    <div class="description">
+
+      <div id="BLK_Title"></div>
+
+      <script type="text/javascript">
+        var blk_title = new Blackmail("blackmail.js", "#BLK_Title", "rgba(241, 241, 241, 0.52)");
+        blk_title.attach();
+      </script>
+
+      <p>
+        BlackmailJS aka RansomScript is a typography class for Javascript (Vanilla). It aims to simulate character cut-outs from newspapers/magazines in the style of old-fashioned ransom notes. It concatenates a given string sequence by applying various HTML
+        text elements like: <code>&lt;strong&gt; &lt;i&gt; &lt;em&gt; &lt;mark&gt; &lt;small&gt; &lt;del&gt; &lt;ins&gt; &lt;sub&gt; &lt;sup&gt;</code>.
+        <br>
+        <br>
+        <a href="#">Get code from Github</a>
+        
+        <br>
+        <br> Example:
+        <br>
+        <br>
+        <code>
+          &lt;div id=&quot;BLK_Example&quot;&gt;&lt;/div&gt;<br>
+          &lt;script&gt;<br>
+          &nbsp;&nbsp;let blk_example = new Blackmail(&quot;Hello World.&quot;, &quot;#BLK_Example&quot;);<br>
+          &nbsp;&nbsp;blk_example.attach();<br>
+          &lt;/script&gt;
+        </code>
+      </p>
+
+      <div id="BLK_Example"></div>
+      <script type="text/javascript">
+        // create a new instance of Blackmail
+        // new Blackmail(string, element, color, shadow, shadow_color)
+        var blk_example = new Blackmail("Hello World", "#BLK_Example", "", "", "", "", true);
+        blk_example.attach();
+      </script>
+
+      <p style="margin-top:180px;">
+        And that's all there is, kids. =)
+      </p>
+      <footer>philippteister.com
+        <a href="https://creativecommons.org/licenses/by-sa/4.0/" , target="_blank">
+          <span class="copyleft">©</span>
+        </a>&nbsp;&nbsp;&nbsp;&nbsp;2019</footer>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
