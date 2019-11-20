@@ -7,7 +7,7 @@ BlackmailJS aka RansomScript is a typography class for Javascript (Vanilla). It 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
 ### Usage
-### Example: Hello, World
+#### Example: Hello, World
 ```html
 <!-- Create a '<div>' container with a proper 'id' -->
 <div id="BLK_Example"></div>
