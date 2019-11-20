@@ -4,7 +4,7 @@ BlackmailJS aka RansomScript is a typography class for Javascript (Vanilla). It 
 ### Usage
 To use BlackmailJS in your project, it's recommended to inject 
 ```html
-<script src='blackmail.js'><script>
+<script type='text/javascript' charset='utf-8' src='blackmail.js'></script>
 ``` 
 inside the head element of your HTML document 
 
