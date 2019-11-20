@@ -29,7 +29,5 @@ This can be either inside the <head> element or right before the closing tag of 
   - code clean up and optimization
   - implement animation() function
   - render full page texts !!!
-  
 
- 
 
