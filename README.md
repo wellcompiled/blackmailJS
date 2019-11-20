@@ -5,7 +5,7 @@ BlackmailJS [Website](https://wellcompiled.github.io/blackmailJS/)
 
 ### Usage
 To use BlackmailJS, it's recommended to inject it *before* your logic code.
-This can be either inside the <head> element or right before the closing tag of the </body>.
+This can be either inside the '<head>' element or right before the closing tag of the '</body>'.
 ```html
 <script type='text/javascript' charset='utf-8' src='blackmail.min.js'></script>
 ``` 
