@@ -1,4 +1,3 @@
-
 class Blackmail {
   constructor(str, elem, color, shadow, shadow_color, bg_color) {
     this.str = str;
