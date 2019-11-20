@@ -12,12 +12,9 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 <!-- Create a 'div' container with a proper 'ID' -->
 <div id="BLK_Example"></div>
 <script>
-  // Initiate a new Blackmail instance with your favourite word(s)
-  // aka string of characters e.g. "Hello, World." and inject your previous
-  // created 'ID' of the 'div' container.
+  // Initiate a new Blackmail instance with your favourite word(s) aka string of characters e.g. "Hello, World." and inject your previously created 'ID' of the 'div' container.
   let blk_example = new Blackmail("Hello, World.", "#BLK_Example");
-  // Use the 'attach()' function on your newly created instance and let the magic 
-  // take its part ^^   
+  // Use the 'attach()' function on your newly created instance and let blackmailJS magic do the rest ^^   
   blk_example.attach();
 </script>
 ```
