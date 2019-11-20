@@ -9,13 +9,17 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 ### Usage
 ### Example: Hello, World
 ```html
-<!-- Create a 'div' container with a proper 'ID' -->
+<!-- Create a '<div>' container with a proper 'id' -->
 <div id="BLK_Example"></div>
+
 <script>
-  // Initiate a new Blackmail instance with your favourite word(s) aka string of characters e.g. "Hello, World." and inject your previously created 'ID' of the 'div' container.
-  let blk_example = new Blackmail("Hello, World.", "#BLK_Example");
-  // Use the 'attach()' function on your newly created instance and let blackmailJS magic do the rest ^^   
-  blk_example.attach();
+  let my_string = "Hello, World.";
+  let element_id = "#BLK_Example";
+  // Initiate a new Blackmail instance with your favourite word(s) aka string of
+  // characters e.g. "Hello, World." and inject your previously created 'id'.
+  let my_blk_instance = new Blackmail(my_string, element_id);
+  // Use the 'attach()' function on your newly created instance to render it to your screen.   
+  my_blk_instance.attach();
 </script>
 ```
 
