@@ -1,4 +1,4 @@
-let _styleCounter = false;
+
 class Blackmail {
   constructor(str, elem, color, shadow, shadow_color, bg_color) {
     this.str = str;
@@ -38,6 +38,7 @@ class Blackmail {
       ['"Courier New", Courier, monospace'],
       ['"Lucida Console", Monaco, monospace']
     ];
+    this._styleCounter = false;
   };
   init() {
     console.log("--> Blackmail.init()");
@@ -46,7 +47,7 @@ class Blackmail {
       this.attach();
       
       
-      
+
       
     }
   };
@@ -54,7 +55,7 @@ class Blackmail {
   attach() {
     console.log("--> Blackmail.attach()");
     try {
-      if (!_styleCounter) {
+      if (!this._styleCounter) {
         
         let _CSS = ".blk_p{display:block;margin:0;padding:0}.blk_strong{font-weight:bold}.blk_i{font-style:italic}.blk_small{font-size:smaller}.blk_mark{background-color:yellow;color:black}.blk_del{text-decoration:line-through}.blk_ins{text-decoration:underline}.blk_sub{vertical-align:sub;font-size:smaller}.blk_sup{vertical-align:super;font-size:smaller}.blk_h1{display:block;margin:0;padding:0;font-size:2em;font-weight:bold}.blk_h2{display:block;margin:0;padding:0;font-size:1.5em;font-weight:bold}.blk_h3{display:block;margin:0;padding:0;font-size:1.17em;font-weight:bold}.blk_h4{display:block;margin:0;padding:0;font-weight:bold}.blk_h5{display:block;margin:0;padding:0;font-size:.83em;font-weight:bold}";
         
@@ -72,7 +73,7 @@ class Blackmail {
         } else {
           _STYLE.appendChild(document.createTextNode(_CSS));
         }
-        _styleCounter = true;
+        this._styleCounter = true;
       }
       document.querySelector(this.elem).innerHTML = this.generate();
     } catch (e) {
