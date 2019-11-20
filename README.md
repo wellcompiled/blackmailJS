@@ -1,5 +1,8 @@
 ## blackmailJS
-You can use the [editor on GitHub](https://github.com/wellcompiled/blackmailJS/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+BlackmailJS aka RansomScript is a typography class for Javascript (Vanilla). It aims to simulate character cut-outs from newspapers/magazines in the style of old-fashioned ransom notes. It concatenates a given string sequence by applying various HTML text elements like: '''<strong> <i> <em> <mark> <small> <del>''' <ins> <sub> <sup>.
+
+
+
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
