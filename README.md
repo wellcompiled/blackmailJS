@@ -6,9 +6,15 @@ BlackmailJS aka RansomScript is a typography class for Javascript (Vanilla). It 
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+### Usage
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+```Example:
+<div id="BLK_Example"></div>
+<script>
+  let blk_example = new Blackmail("Hello World.", "#BLK_Example");
+  blk_example.attach();
+</script>
+```
 
 ```markdown
 Syntax highlighted code block
