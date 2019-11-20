@@ -24,8 +24,7 @@ This can be either inside the <head> element or right before the closing tag of 
 </script>
 ```
 
-### B.I.Y.S.
-TO DO: 
+### B.I.Y.S. && TODOs 
   - NPM, build process
   - code clean up and optimization
   - implement animation() function
