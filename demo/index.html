@@ -3,9 +3,10 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>blackmail.js - Demo</title>
-  <link rel="stylesheet" href="blackmail.min.css">
-  <script src="src/blackmail.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="../src/blackmail.css">
+  <script src="../src/blackmail.js" charset="utf-8"></script>
 
   <style>
     html,
@@ -30,6 +31,11 @@
       background: rgba(241, 241, 241, 0.52);
     }
 
+    span#Year {
+      position: absolute;
+      margin-left: 1.5em;
+    }
+
     code {
       font-size: 0.8em
     }
@@ -41,12 +47,15 @@
       margin: 0 auto;
     }
 
-    a, a:visited, a:focus {
+    a,
+    a:visited,
+    a:focus {
       color: rgba(241, 241, 241, 0.52);
       animation: flash 4s ease-in-out infinite;
       -webkit-animation: flash 4s ease-in-out infinite;
       text-decoration: none;
     }
+
     @keyframes flash {
       from {
         color: rgba(241, 241, 241, 0.52);
@@ -60,9 +69,10 @@
         color: rgba(241, 241, 241, 0.52);
         /* text-shadow: rgba(241, 241, 241, 0.52) 0 0 0em; */
       }
-      
-      
+
+
     }
+
     a:hover {
       color: rgba(41, 241, 21, 0.62);
       text-shadow: rgba(241, 241, 221, 0.8) 0 0 1em;
@@ -155,8 +165,10 @@
       position: absolute;
       transform: scale(-1);
       -webkit-transform: scale(-1);
+      margin-left: 0.2em;
+      bottom: .0015em;
+      font-size: 1.3em;
     }
-    
   </style>
 </head>
 
@@ -178,8 +190,9 @@
         text elements like: <code>&lt;strong&gt; &lt;i&gt; &lt;em&gt; &lt;mark&gt; &lt;small&gt; &lt;del&gt; &lt;ins&gt; &lt;sub&gt; &lt;sup&gt;</code>.
         <br>
         <br>
-        <a href="#">Get code from Github</a>
-        
+        <span>Check out full code on</span>
+        <a href="https://github.com/wellcompiled/blackmailJS" target="_blank"><u>Github</u></a>
+
         <br>
         <br> Example:
         <br>
@@ -207,7 +220,7 @@
       <footer>philippteister.com
         <a href="https://creativecommons.org/licenses/by-sa/4.0/" , target="_blank">
           <span class="copyleft">©</span>
-        </a>&nbsp;&nbsp;&nbsp;&nbsp;2019</footer>
+        </a><span id="Year">2019</span></footer>
     </div>
 
   </div>
