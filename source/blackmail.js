@@ -45,10 +45,6 @@ class Blackmail {
     if (this.str == "" || this.str !== undefined) {
       this.info();
       this.attach();
-      
-      
-
-      
     }
   };
   
