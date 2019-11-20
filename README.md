@@ -8,7 +8,7 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 ### Usage
 
-```Example:
+```example
 <div id="BLK_Example"></div>
 <script>
   let blk_example = new Blackmail("Hello World.", "#BLK_Example");
