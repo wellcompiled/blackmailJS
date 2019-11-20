@@ -1,11 +1,9 @@
+![BlackmailJS Logo](https://github.com/wellcompiled/blackmailJS/blob/master/blackmailjs.png "BlackmailJS Logo")
+
 ## blackmailJS
 BlackmailJS aka RansomScript is a typography class for Javascript (Vanilla). It aims to simulate character cut-outs from newspapers/magazines in the style of old-fashioned ransom notes. It concatenates a given string sequence by applying various HTML text elements like: ```<strong> <i> <em> <mark> <small> <del>``` <ins> <sub> <sup>.
 
 BlackmailJS [Website](https://wellcompiled.github.io/blackmailJS/)
-
-![BlackmailJS Logo](https://github.com/wellcompiled/blackmailJS/blob/master/blackmailjs.png "BlackmailJS Logo")
-
-
 
 ### Usage
 To use BlackmailJS, it's recommended to inject it *before* your logic code.
